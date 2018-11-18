@@ -63,7 +63,7 @@ if ($reponame == NULL) {
                 switch ($repoPredefinedStructure) {
                     case "single":
                         $engine->getRepositoryEditProvider()
-                            ->mkdir($r, array('trunk', 'branches', 'tags'));
+                            ->mkdir($r, array('backup', 'database', 'doc', 'source', 'source/branches', 'source/trunk', 'source/tags'));
                         break;
 
                     case "multi":
